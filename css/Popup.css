@@ -1,0 +1,25 @@
+.pop_container {
+    position: fixed;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background-color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;  /* 消失动画时间 */
+    border-radius: 40px;
+    text-align: center;
+}
+.pop_container .popText {
+
+}
+
+#popup.active {
+    top: 5%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;  /* 进入动画时间 */
+}
+
