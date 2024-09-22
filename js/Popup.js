@@ -15,7 +15,13 @@ if(BackgroundColor == 'rgba(0, 0, 0, 0)') {
 // 针对纯白页面的适配
 
 
-function Eject(popText) { // 弹出层
+
+/*
+* Last edit time: 2024-9-22 22:30
+* Module: LomUI Framework Layer
+* Auther: WangMaixin
+*/
+function Eject(popText) { // 文字弹出框
     var a = popText;
     a = (a == undefined ? false : a);
     a == false ? LomError('[LomUI]Please check the parameters') : a;
@@ -30,5 +36,20 @@ function Eject(popText) { // 弹出层
         blur.classList.toggle('active');
     },3000);
     
+
+    //优化建议
+    //1.更加便捷的调用，HTML只需要输入方法就可以调用，无需添加HTML代码
+    //2.针对开发者传入的参数进行过滤，防止错误类型的数据进入此方法
+
+    // 使用方法
+    // 基础参数
+    //  Text：弹出层内容
+    // 调用方法
+    // Eject([Text]);
+    // 提示
+    // 此方法必须传参使用，未传参可能会产生错误信息
+
+
+    return;
 }
-//此函数使用必须传参
+
