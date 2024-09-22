@@ -39,38 +39,3 @@ button:hover {
     transform: scale(1.2,1.2);
     box-shadow: 0px 6px 7px rgba(79 ,79 ,79 ,0.2);
 }
-#minit_btn.active {
-    transform: scale(1.1,1.1);  /* button点击缩放比例 */
-}
-
-#minit_input.active {
-    transform: scale(1,1.2);  /* input表单点击缩放比例 */
-}
-
-.minit_typetext {
-    width: 600px;
-    height: 200px;
-    border: 0;
-    background-color: #fff;
-    box-shadow: 2px 6px 7px rgba(79 ,79 ,79 ,.30);
-    border-radius: 20px;
-}
-.minit_typetext .minit_typetext_title {
-    width: 95%;
-    margin-left: 2.5%;
-    height: 60px;
-    /* background-color: #0fbcf9; */
-    border-bottom: 2px solid #000;
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.minit_typetext .minit_typetext_body {
-    width: 95%;
-    height: 50px;
-    margin-left: 2.5%;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-}

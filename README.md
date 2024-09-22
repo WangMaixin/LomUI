@@ -1,4 +1,4 @@
-# LomUI
+# LomUI 洛蒙视觉
 Minit LomUI frame
 ## 编写部门
 乡网网络中心事业部互联网产业部
