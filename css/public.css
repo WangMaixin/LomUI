@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {   /* #f0f0f0是迷小的官方指定默认颜色 */
+    background-color: #f0f0f0;
+}
+
+
+/* 默认输入框 */
+input {
+    width: 345px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border: 0;
+    border-radius: 8px;
+    font-size: 15px;
+    padding-left: 15px;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+}
+input:focus {
+    outline: 0;
+    animation-name: btnfocus;
+    animation-duration: 0.5s;
+}
+input:hover {
+    transform: scale(1.1,1.3);
+    /* 第一个数表示x轴的缩放，第二个数表示y轴的缩放，如果两个数一样，可以用一个数代替 */
+    box-shadow: 0px 6px 7px rgba(79 ,79 ,79 ,0.2);
+}
+
+/*
+* Last edit time:2024-9-24 22:38
+*/
+/* 默认按钮 */
+.lomui_btn {
+    margin-top: 10px;
+    margin-left: 10px;
+    /* 默认按钮标准尺寸 */
+    padding: 11px 21px 11px 21px;
+    background: #5D4037;
+    border: 0;
+    color: #f5f5f5;
+    border-radius: 2px;
+    /* 过度动画 */
+    transition: background 0.2s;
+
+    cursor: pointer;
+}
+.lomui_btn:hover {
+    background: #795548;
+}
+.lomui_btn:active {
+    background: #5D4037;
+}
+/* 大型按钮 */
+.lomui_btn_lg {
+    /* 大型按钮标准尺寸 */
+    padding: 11px 21px 11px 21px;
+    font-size: 1.1em;
+}
+/* 小型按钮 */
+.lomui_btn_sm {
+    /* 小型按钮标准尺寸 */
+    padding: 7px 13px 7px 13px;
+    font-size: 0.7em;
+}
+/* 迷你按钮 */
+.lomui_btn_xs {
+    /* 迷你按钮标准尺寸 */
+    padding: 2px 4px 2px 4px;
+    font-size: 0.5em;
+}
+/* 禁用按钮 */
+.lomui_btn_disabled {
+    margin-top: 10px;
+    margin-left: 10px;
+    /* 默认按钮标准尺寸 */
+    padding: 11px 21px 11px 21px;
+    background: #5D4037;
+    border: 0;
+    color: #f5f5f5;
+    border-radius: 2px;
+    /* 过度动画 */
+    transition: background 0.2s;
+
+    opacity: 0.5;
+    /* 光标样式 */
+    cursor: not-allowed;
+}
+/* 圆角按钮 */
+.lomui_btn_radius {
+    border-radius: 100px;
+}
+
+
+
+/*
+* Last edit time:2024-9-24 22:38
+*/
+/* 横线标题 */
+.lomui_elem_field {
+    padding-left: 20px;
+    margin: 15px 20px 5px 20px;
+    font-size: 1.25em;
+    /* 字体粗细 */
+    font-weight: 300;
+    color: #333;
+    border: 1px solid #999;
+
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.lomui_elem_field legend {
+    padding: 0px 4px 2px 4px;
+}
