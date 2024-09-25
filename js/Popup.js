@@ -17,7 +17,11 @@ const lomyer = {
     */
     msg: function(popText) {
 
+        
         var message = '';
+        // 过滤非字符串的数据
+        var popTextType = typeof popText;
+        popTextType != 'string' ? LomError('[LomUI]Please check the parameters') : a;
 
         // 针对纯白页面的适配
         var BackgroundColor = $('body').css('background-color');
