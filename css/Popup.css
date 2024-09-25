@@ -12,6 +12,7 @@
     transition: 2s;  /* 消失动画时间 */
     border-radius: 40px;
     text-align: center;
+    padding: 13px 0 13px 0;
 
     /* 具有高风险的代码：后续版本请对弹窗隐藏方式和行进方式进行代码更新，对多端显示进行适配 */
 }
