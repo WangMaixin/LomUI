@@ -4,15 +4,12 @@
  * |  Author: 王迈新
  * |  Copyright (c) 2024, www.iorouter.online. All Rights Reserved.
  * '-------------------------------------------------------------------*/
-
-
-
 const lomyer = {
 
 
     /*
-    * Last edit time: 2024-9-25 21:08
-    * Module: LomUI Framework Layer
+    * Last edit time: 2024-9-25 21:30
+    * Module: LomUI Framework Layer Message Box
     * Auther: WangMaixin
     */
     msg: function(popText) {
@@ -69,7 +66,7 @@ const lomyer = {
         // 调用方法
         // lomyer.msg([content]);
         // 提示
-        // 此方法必须传参使用，未传参可能会产生错误信息
+        // 此方法必须传参且参数的类型为字符串，否则可能会产生错误信息
     
     
         return message;

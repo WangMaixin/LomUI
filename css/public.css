@@ -5,8 +5,6 @@
  * |  Copyright (c) 2024, www.iorouter.online. All Rights Reserved.
  * '-------------------------------------------------------------------*/
 
-
- 
 * {
     margin: 0;
     padding: 0;
@@ -15,30 +13,76 @@ body {   /* #f0f0f0是迷小的官方指定默认颜色 */
     background-color: #f0f0f0;
 }
 
+/*
+* Last edit time:2024-9-27 21:37
+*/
+/* 输入框 */
+.lomui_input {
+    padding: 8px 4px 8px 8px;
+    /* 默认300px */
+    width: 300px;
+    font-size: 0.85em;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: border 0.2s;
+}
+.lomui_input:focus {
+    outline: none;
+}
+.lomui_input:hover {
+    border: 1px solid #BDBDBD;
+}
+/* 密码框 */
+.lomui_form_pwd {
+    padding: 8px 4px 8px 8px;
+    /* 默认150px */
+    width: 150px;
+    font-size: 0.85em;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: border 0.2s;
+}
+.lomui_form_pwd:focus {
+    /* border: 1px solid #BDBDBD; */
+    outline: none;
+}
+.lomui_form_pwd:hover {
+    border: 1px solid #BDBDBD;
+}
+/* 选择框 */
+/* 不被推荐的代码，后期版本请使用js对选择框进行美化 */
+.lomui_select {
+    display: flex; /* 使用flex布局,flex布局也是被迷小推荐使用的方法 */
+    flex-direction: row; /* 默认值，可以省略，表示主轴方向为横向 */
+    align-items: center; /* 垂直居中 */
+    /* justify-content: center; /* 水平居中 */
+}
+.lomui_select select {
+    width: 300px;
+    padding: 8px 4px 8px 8px;
+    border: 1px solid #757575;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: border 0.2s;
+    color: #333;
+}
+.lomui_select select:active {
+    outline: none;
+}
+.lomui_select select:focus {
+    outline: none;
+}
+.lomui_select select:hover {
+    outline: none;
+    border: 1px solid #BDBDBD;
+}
 
-/* 默认输入框 */
-input {
-    width: 345px;
-    height: 40px;
-    background-color: #F5F5F5;
-    border: 0;
-    border-radius: 8px;
-    font-size: 15px;
-    padding-left: 15px;
-    transition: all 0.3s;
-    letter-spacing: 1px;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
-}
-input:focus {
-    outline: 0;
-    animation-name: btnfocus;
-    animation-duration: 0.5s;
-}
-input:hover {
-    transform: scale(1.1,1.3);
-    /* 第一个数表示x轴的缩放，第二个数表示y轴的缩放，如果两个数一样，可以用一个数代替 */
-    box-shadow: 0px 6px 7px rgba(79 ,79 ,79 ,0.2);
-}
+
+
+
+
 
 /*
 * Last edit time:2024-9-25 18:46
@@ -127,3 +171,66 @@ input:hover {
 .lomui_elem_field legend {
     padding: 0px 4px 2px 4px;
 }
+
+
+
+/*
+* Last edit time:2024-9-24 22:38
+*/
+/* 导航 */
+/* 横向导航栏 */
+.lomui_nav {
+    display: flex;
+    background: #212121;
+    color: #BDBDBD;
+}
+.lomui_nav_tran {
+    width: 100%;
+}
+.lomui_nav_tran li {
+    list-style-type: none; /* 移除列表项前的项目符号 */
+    padding-left: 0; /* 移除列表项内部的左内边距 */
+    margin-left: 0; /* 移除列表项内部的左外边距 */
+
+    padding: 20px 10px 20px 10px;
+    margin-left: 20px;
+    font-weight: 320;
+    cursor: pointer;
+    border: 4px solid #212121;
+
+    border-left-style: none; /* 取消左边界边框 */
+    border-right-style: none; /* 取消右边界边框 */
+
+    transition: all 0.1s;
+}
+.lomui_nav_tran li:hover {
+    border-bottom: 4px solid #795548;
+    color: #ffffff;
+}
+/* 垂直导航栏 */
+.lomui_nav_vert {
+    width: 200px;
+    flex-direction: column;
+    text-align: center;
+}
+.lomui_nav_vert li {
+    display: block;
+    list-style-type: none; /* 移除列表项前的项目符号 */
+    padding-left: 0; /* 移除列表项内部的左内边距 */
+    margin-left: 0; /* 移除列表项内部的左外边距 */
+
+    
+    padding: 15px 10px 15px 10px;
+    font-weight: 320;
+    cursor: pointer;
+    border: 4px solid #212121;
+
+    border-left-style: none; /* 取消左边界边框 */
+    border-right-style: none; /* 取消右边界边框 */
+    transition: background 0.2s;
+}
+.lomui_nav_vert li:hover {
+    background: #757575;
+    color: #ffffff;
+}
+
